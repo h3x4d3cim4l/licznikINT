@@ -4,7 +4,7 @@ import './css/App.css'
 
 
 
-// TODO: localStorage, css media  
+// TODO: localStorage 
 
 
 export const App  = () => {
