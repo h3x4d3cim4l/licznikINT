@@ -3,12 +3,15 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  --inside: rgb(144, 96, 235);
+  --inside: rgb(0, 0, 0);
+  --overlay: rgb(12, 49, 91);
+  --background: rgb(56, 52, 52);
+  --hacker: rgb(1, 164, 12);
 }
 
 .overlay
 {
-  background-color: rgb(58, 67, 197) ;
+  background-color:var(--overlay);
   padding:50px;
   border-radius: 10px;
   display:block;
@@ -16,7 +19,7 @@
 
 }
 body{
-  background-color: rgb(56, 52, 52);
+  background-color:var(--background); 
 }
 
 .windowCount
@@ -24,6 +27,7 @@ body{
   background-color: var(--inside);
   border-radius: 20px;
   padding:0;
+  color:var(--hacker);
 
 }
 
@@ -34,8 +38,9 @@ body{
   width: 500px;
   height:250px;
   padding:25px 10px;
-  color:#ffffff;
+  color:var(--hacker);
   font-size: 17px ;
+  resize:none;
   
 
 }
