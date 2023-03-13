@@ -2,6 +2,11 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './css/App.css'
 
+
+
+// TODO: localStorage, css media  
+
+
 export const App  = () => {
   const [licznik,setLicznik] = useState(0)
   const [historia, setHistoria] = useState(``)
