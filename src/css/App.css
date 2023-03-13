@@ -1,0 +1,46 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  --inside: rgb(144, 96, 235);
+}
+
+.overlay
+{
+  background-color: rgb(58, 67, 197) ;
+  padding:50px;
+  border-radius: 10px;
+  
+
+}
+body{
+  background-color: rgb(56, 52, 52);
+}
+
+.windowCount
+{
+  background-color: var(--inside);
+  border-radius: 20px;
+  padding:0;
+
+}
+
+#recent
+{
+  border-radius:20px;
+  background-color:var(--inside) ;
+  width: 500px;
+  height:250px;
+  padding:25px 10px;
+  color:#ffffff;
+  font-size: 17px ;
+  
+
+}
+label{
+  background-color: var(--inside);
+  border-radius: 20px;
+  width:100%;
+  padding:0 50px;
+}
