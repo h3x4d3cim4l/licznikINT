@@ -17,9 +17,12 @@ export const App  = () => {
 
   useEffect(()=>{
     localStorage.setItem("licznik", licznik)
-    localStorage.setItem("historia", historia)
   },[licznik])
   
+  useEffect(()=>{
+    
+    localStorage.setItem("historia", historia)
+  },[historia])
 
   const zwieksz = (x) => {
     setLicznik(licznik+x)
