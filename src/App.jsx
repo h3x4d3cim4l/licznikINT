@@ -14,6 +14,7 @@ export const App  = () => {
   const storageHistoria = localStorage.getItem("historia") || ``
   const [historia, setHistoria] = useState(storageHistoria)
 
+  const reprInfo = "Autor: Przemek Głowacki, Oskar Urban\n  Licznik:\nLPM : +1\nPPM : -1\nScroll: +5\nShift + LPM : +10\nShift + PPM : -10\nShift + Scroll : -5\nShift + \"reset\"(LPM) : Wyczyść razem z historią "
 
   
 
