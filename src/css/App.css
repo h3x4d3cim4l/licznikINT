@@ -11,6 +11,7 @@
   background-color: rgb(58, 67, 197) ;
   padding:50px;
   border-radius: 10px;
+  display:block;
   
 
 }
@@ -43,4 +44,16 @@ label{
   border-radius: 20px;
   width:100%;
   padding:0 50px;
+}
+
+.countRoot{
+  margin:30px;
+}
+
+@media (min-width: 1500px) {
+  .overlay
+  {
+    display: flex;
+  }
+  
 }

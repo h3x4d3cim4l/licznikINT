@@ -58,12 +58,18 @@ export const App  = () => {
 
   return (
     <div className='overlay'>
-      <div className="windowCount">{licznik}</div>
-      <div className='ops'>
-      <button onClick={(e)=>handleClick(e)} onAuxClick={(e)=>handleClick(e)} id="plus">+</button><br/> <button onClick={(e)=>handleReset(e)}>reset</button> <button onClick={()=>handleInfo()}>informacje</button>
-      <br/>
-      <label htmlFor="recent">Historia</label><br/>
-      <textarea disabled id="recent" value={historia}></textarea>
+      
+      <div className='countRoot'>
+        <div className="windowCount">{licznik}</div>
+        <div className='ops'>
+          <button onClick={(e)=>handleClick(e)} onAuxClick={(e)=>handleClick(e)} id="plus">+</button> <button onClick={(e)=>handleReset(e)}>reset</button> <button onClick={()=>handleInfo()}>informacje</button>
+          <br/>
+        </div>
+      </div>
+
+      <div className='history'>
+        <label htmlFor="recent">Historia</label><br/>
+        <textarea disabled id="recent" value={historia}></textarea>
       </div>
     </div>
   )
