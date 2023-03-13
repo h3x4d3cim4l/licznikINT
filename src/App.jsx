@@ -4,7 +4,6 @@ import './css/App.css'
 
 
 
-// TODO: localStorage 
 
 
 export const App  = () => {
@@ -16,13 +15,16 @@ export const App  = () => {
 
   const reprInfo = "Autor: Przemek Głowacki, Oskar Urban\n  Licznik:\nLPM : +1\nPPM : -1\nScroll: +5\nShift + LPM : +10\nShift + PPM : -10\nShift + Scroll : -5\nShift + \"reset\"(LPM) : Wyczyść razem z historią "
 
+  useEffect(()=>{
+    localStorage.setItem("licznik", licznik)
+    localStorage.setItem("historia", historia)
+  },[licznik])
   
 
   const zwieksz = (x) => {
     setLicznik(licznik+x)
-
     setHistoria(historia + "\n"+ x)
-
+    
     let ta = document.getElementById("recent")
     ta.scrollTop = ta.scrollHeight;
   }
