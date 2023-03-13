@@ -8,9 +8,12 @@ import './css/App.css'
 
 
 export const App  = () => {
-  const [licznik,setLicznik] = useState(0)
-  const [historia, setHistoria] = useState(``)
-  const reprInfo = "Autor: Przemek Głowacki, Oskar Urban\n  Licznik:\nLPM : +1\nPPM : -1\nScroll: +5\nShift + LPM : +10\nShift + PPM : -10\nShift + Scroll : -5"
+  const storageLicznik = localStorage.getItem("licznik") || 0        
+  const [licznik,setLicznik] = useState(parseInt(storageLicznik))    //* storage odczytuje się prawidłowo 
+
+  const storageHistoria = localStorage.getItem("historia") || ``
+  const [historia, setHistoria] = useState(storageHistoria)
+
 
   
 
